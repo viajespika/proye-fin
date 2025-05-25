@@ -1,0 +1,104 @@
+:root {
+  --color-principal: orangered;
+  --color-secundario: red;
+  --color-fondo: linear-gradient(to right, gold, white);
+  --color-texto: white;
+  --color-hover-boton: red;
+  --color-hover-volver: yellow;
+  --padding-boton: 18px;
+  --border-radius: 8px;
+  --font-size-grande: 35px;
+  --font-size-mediano: 20px;
+  --font-size-input: 15px;
+}
+
+body {
+  margin: auto;
+  background: var(--color-fondo);
+}
+
+.textototal {
+  height: auto;
+  width: 29%;
+  background: var(--color-principal);
+  text-align: center;
+  margin: auto;
+}
+
+.imageninicio {
+  background: var(--color-secundario);
+  border: var(--border-radius);
+}
+
+.texto1 {
+  font-size: var(--font-size-grande);
+  color: var(--color-texto);
+}
+
+.texto2,
+.check {
+  font-size: var(--font-size-mediano);
+  color: var(--color-texto);
+}
+
+.imagen2:hover {
+  cursor: pointer;
+}
+
+input[type="text"] {
+  border-radius: var(--border-radius);
+  padding: 20px;
+  width: 30%;
+  font-size: var(--font-size-input);
+}
+
+input[type="text"]:focus {
+  background: lightgreen;
+  color: black;
+}
+
+.boton,
+.volver {
+  border-radius: var(--border-radius);
+  padding: var(--padding-boton);
+}
+
+.boton:hover {
+  cursor: pointer;
+  background: var(--color-hover-boton);
+  color: var(--color-texto);
+}
+
+.volver:hover {
+  cursor: pointer;
+  background: var(--color-hover-volver);
+  color: black;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+  .textototal {
+    width: 90%;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .texto1 {
+    font-size: 28px;
+  }
+
+  .texto2,
+  .check {
+    font-size: 16px;
+  }
+
+  .boton,
+  .volver {
+    width: 100%;
+    padding: 15px;
+  }
+}

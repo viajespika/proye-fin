@@ -1,0 +1,444 @@
+
+body {
+    background: linear-gradient(to right, #F7D346,#e11313);
+}
+
+table {
+    border: 2px solid black;
+    background: #FFDB58;
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+    overflow: auto;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ff6901;
+}
+
+a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.botoninicio {
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+
+.botoninicio:hover {
+    background: lightgrey;
+    color: black;
+    cursor: pointer;
+}
+
+.tablainfo {
+    background: #ffde59;
+}
+
+.seleccion1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.seleccion2 {
+    text-align: center;
+}
+
+.seleccion3 {
+    text-align: center;
+}
+
+.metodopago {
+    background: rgb(245, 245, 220);
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: justify;
+    width: 100%;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    background: gray;
+    color: white;
+    display: block;
+}
+
+video {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    background: black;
+}
+
+.video {
+    background: #f7803c;
+}
+
+.preguntasfrecuentes {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
+    padding: 5px;
+}
+
+.redsocial1 {
+    height: 100px;
+}
+
+.redsocial2 {
+    height: 100px;
+}
+
+.redsocial3 {
+    height: 100px;
+}
+
+/* Estilo del acordeón (FAQ interactivo) */
+.faq-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 15px;
+    background: #0066cc;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background: #0055aa;
+}
+
+.faq-answer {
+    padding: 15px;
+    display: none;
+    background: rgb(79, 131, 152);
+    color: white;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+/* Estilo de la seccion del blog */
+:root {
+    --amarillo-pikachu: #FCC203;
+    --azul-pokeball: #3B5CA8;
+    --rojo-pokeball: #FF1C1C;
+    --gris-fondo: #f5f5f5;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--gris-fondo);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, var(--rojo-pokeball), var(--amarillo-pikachu));
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el formulario de publicación */
+.post-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-form h2 {
+    color: var(--azul-pokeball);
+    margin-top: 0;
+}
+
+.post-form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.post-form button {
+    background-color: var(--amarillo-pikachu);
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.post-form button:hover {
+    background-color: #e6b800;
+}
+
+/* Estilos para las publicaciones */
+.posts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.post {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--azul-pokeball);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.post-info h3 {
+    margin: 0;
+    color: var(--azul-pokeball);
+}
+
+.post-info small {
+    color: #777;
+}
+
+.post-content {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.post-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    color: #777;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-actions button:hover {
+    color: var(--azul-pokeball);
+}
+
+/* Estilos para el sistema de comentarios */
+.comments {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.comment-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.comment-form input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    background-color: var(--azul-pokeball);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.comment-content {
+    flex-grow: 1;
+}
+
+.comment-author {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--azul-pokeball);
+}
+
+.comment-text {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    a {
+        font-size: 16px;
+    }
+
+    .botoninicio {
+        font-size: 16px;
+        padding: 8px;
+        width: 90%;
+        max-width: 250px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .redsocial1,
+    .redsocial2,
+    .redsocial3 {
+        height: 80px;
+        width: 80px;
+    }
+
+    form select,
+    form input[type="date"],
+    form input[type="number"] {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+    }
+
+    table th,
+    table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .slide {
+        width: 140px;
+        height: 80px;
+    }
+
+    .global {
+        width: 95%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    a {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .botoninicio {
+        width: 100%;
+        font-size: 14px;
+        padding: 6px;
+        max-width: 100%;
+    }
+
+    .redsocial1,
+    .redsocial2,
+    .redsocial3 {
+        height: 60px;
+        width: 60px;
+    }
+
+    .slider {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
