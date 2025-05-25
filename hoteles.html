@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilohotel.css">
+	<title>PROYECTO FINAL</title>
+</head>
+<body>
+	<table>		
+		<tr>
+		<th class="imagenencabezado"><a href="index.html"><img src="imagenes/logonuevo.png" width="150px" height="90px"></a></th>
+		<th class="encabezado"><a href="hoteles.html">Hoteles</a></th>
+		<th class="encabezado"><a href="vuelos.html">Vuelos</a></th>
+		<th class="encabezado"><a href="ofertas.html">Ofertas</a></th>
+		<th class="encabezado"><a href="ayuda.html">Ayuda</a></th>
+		<th class="boton"><a href="iniciarsesion.html"><button class="botoninicio">Iniciar Sesión</button></a></th>
+		</tr>
+	</table>
+	<br/>
+	<main>
+		<h1>Consulta hoteles a donde quieras ir.</h1>
+
+		<div class="mapahotel">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29566.031340807596!2d-100.93855282137847!3d22.135356320404362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shoteles!5e0!3m2!1ses!2smx!4v1747924099245!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+		<div class="tablahoteles">
+			<table>
+				<tr> 
+					<td><button class="hosp" style="background-image: url(imagenes/ciudadleudal.jpg);">Los más populares</button></td>
+					<td><button class="hosp" style="background-image: url(imagenes/melemele.png);">Resorts</button></td>
+					<td><button class="hosp" style="background-image: url(imagenes/puebloaltamia.png);">Conéctate con la naturaleza</button></td>
+					<td><button class="hosp" style="background-image: url(imagenes/pueblonevado.png);">Desconéctate del mundo</button></td>
+					<td><button class="hosp" style="background-image: url(imagenes/hotelrica.png);">Descubre más lugares</button></td>
+				</tr>
+			</table>
+		</div>
+	</main>
+
+	<footer>
+		<p>Viajes Pikachu - San Luis Potosí</p>
+		<p>C. Urbano Villalón 500, La Ladrillera, 78369 San Luis Potosí, S.L.P.</p>
+		<p>Teléfono: 800.265.0125 - www.viajespikachu.com.mx</p>
+		<p>© Despegar.com México S.A. de C.V. Todos los derechos reservados.</p>
+		<p>Prohibida reproducción total/parcial sin autorización escrita del titular.</p>
+		<p>Las fotografías mostradas son responsabilidad de los hoteles.</p>
+	</footer>
+
+	<script>
+		window.addEventListener('mouseover', initLandbot, { once: true });
+		window.addEventListener('touchstart', initLandbot, { once: true });
+		var myLandbot;
+		function initLandbot() {
+		  if (!myLandbot) {
+		    var s = document.createElement('script');
+		    s.type = "module"
+		    s.async = true;
+		    s.addEventListener('load', function() {
+		      var myLandbot = new Landbot.Livechat({
+		        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2925358-IEXP3GYRKYUCTOT4/index.json',
+		      });
+		    });
+		    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+		    var x = document.getElementsByTagName('script')[0];
+		    x.parentNode.insertBefore(s, x);
+		  }
+		}
+	</script>
+</body>
+</html>

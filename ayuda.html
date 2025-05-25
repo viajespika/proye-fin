@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estiloayuda.css">
+	<title>PROYECTO FINAL</title>
+</head>
+<body>
+    <table>     
+        <tr>
+        <th class="imagenencabezado"><a href="index.html"><img src="imagenes/logonuevo.png" width="150px" height="90px"></a></th>
+        <th class="encabezado"><a href="hoteles.html">Hoteles</a></th>
+        <th class="encabezado"><a href="vuelos.html">Vuelos</a></th>
+        <th class="encabezado"><a href="ofertas.html">Ofertas</a></th>
+        <th class="encabezado"><a href="ayuda.html">Ayuda</a></th>
+        <th class="boton"><a href="iniciarsesion.html"><button class="botoninicio">Iniciar Sesión</button></a></th>
+        </tr>
+    </table>
+	<br/>
+
+        <div class="preguntasfrecuentes">
+    <h1>Preguntas Frecuentes (FAQ)</h1>
+    
+    <h2 class="titulofaq">Reservas y Pagos</h2>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>¿Cómo puedo reservar un paquete turístico?</span>
+            <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>Puedes reservar en nuestra web, por teléfono o contactanos por redes sociales. Selecciona destino, fechas y pago inicial.</p>
+        </div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>¿Qué métodos de pago aceptan?</span>
+            <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>Aceptamos tarjetas de crédito/débito (Visa, MasterCard), transferencias bancarias, PayPal y, en algunas sucursales, pago en efectivo.</p>
+        </div>
+    </div>
+    
+    <h2 class="titulofaq">Documentación y Requisitos</h2>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>¿El seguro de viaje está incluido en los paquetes?</span>
+            <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>Algunos paquetes lo incluyen, pero siempre recomendamos contratar un seguro adicional para mayor cobertura. Podemos ayudarte a gestionarlo.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>¿Necesito visa para viajar?</span>
+            <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>Depende de tu nacionalidad y la region de destino. Te recomendamos consultar la embajada correspondiente o nuestro equipo puede asesorarte con los requisitos.</p>
+        </div>
+    </div>
+    
+    <h2 class="titulofaq">Cancelaciones y Reembolsos</h2>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>¿Cuál es la política de cancelación?</span>
+            <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>Las cancelaciones con más de 30 días de anticipación tienen un reembolso del 90%. Entre 15 y 30 días, se aplica un cargo del 20%. Menos de 15 días, no hay reembolso. Consulta nuestras <a>políticas completas aquí</a>.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>¿Cómo puedo generar una cancelacion?</span>
+            <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>Puedes contactar a uno de nuestros agentes, el te comentara cuales son los requerimientos y te ayudara en cada paso del proceso</p>
+        </div>
+    </div>
+    
+    <h2 class="titulofaq">Vuelos y Transporte</h2>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>¿Puedo elegir mi asiento en el avión?</span>
+            <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>Sí, muchas aerolíneas permiten seleccionar asientos, aunque algunos pueden tener un costo adicional. Indícanos tus preferencias al reservar.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>¿Qué pasa si mi vuelo se retrasa o cancela?</span>
+            <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+            <p>Nos coordinamos con la aerolínea para reprogramar tu viaje o buscar alternativas. Si tienes seguro, podrías recibir compensación por gastos.</p>
+        </div>
+    </div>
+</div>
+
+<br/>
+
+<!-- Script para el acordeón interactivo -->
+<script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            // Cerrar todos los demás elementos primero
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== question.parentNode) {
+                    item.classList.remove('active');
+                    item.querySelector('.icon').textContent = '+';
+                }
+            });
+            
+            // Alternar el elemento clickeado
+            const item = question.parentNode;
+            item.classList.toggle('active');
+            
+            // Cambiar el ícono de + a -
+            const icon = question.querySelector('.icon');
+            if (item.classList.contains('active')) {
+                icon.textContent = '-';
+            } else {
+                icon.textContent = '+';
+            }
+        });
+    });
+</script>
+
+    <br/>
+    
+    <h1>Nuestras redes sociales</h1>
+    <div class="redes">
+        <img src="imagenes/facebook.png" class="redsocial1">
+        <img src="imagenes/twitter.png" class="redsocial2">
+        <img src="imagenes/ig.png" class="redsocial3">
+    </div>
+
+    
+    <div class="container">
+        <!-- Formulario para crear nuevas publicaciones -->
+        <section class="post-form">
+            <h2>¡Comparte tu aventura!</h2>
+            <form id="userForm" style="margin-bottom: 20px;">
+                <input type="text" id="userName" placeholder="Ingresa tu nombre" required>
+                <button type="submit">Guardar nombre</button>
+            </form>
+            <form id="newPostForm">
+                <textarea id="postContent" placeholder="¿Qué quieres compartir con la comunidad?"></textarea>
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+        
+        <!-- Sección donde se mostrarán las publicaciones -->
+        <section class="posts-container" id="postsContainer">
+            <!-- Las publicaciones se generarán dinámicamente con JavaScript -->
+        </section>
+    </div>
+    
+    <script>
+        // Variables globales
+        let posts = [];
+        let currentUser = ""; // Ahora empieza vacío hasta que el usuario ingrese su nombre
+        
+        // Función para cargar las publicaciones al iniciar
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPosts();
+            setupEventListeners();
+        });
+        
+        // Cargar publicaciones de ejemplo
+        function loadPosts() {
+            renderPosts();
+        }
+        
+        // Configurar event listeners
+        function setupEventListeners() {
+            // Formulario para guardar nombre de usuario
+            document.getElementById('userForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const userName = document.getElementById('userName').value.trim();
+                
+                if (userName) {
+                    currentUser = userName;
+                    alert(`Nombre guardado: ${currentUser}`);
+                    document.getElementById('userName').value = '';
+                }
+            });
+            
+            // Formulario para nueva publicación
+            document.getElementById('newPostForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const content = document.getElementById('postContent').value.trim();
+                
+                if (!currentUser) {
+                    alert("Por favor, ingresa tu nombre antes de publicar");
+                    return;
+                }
+                
+                if (content) {
+                    addNewPost(content);
+                    document.getElementById('postContent').value = '';
+                }
+            });
+        }
+        
+        // Añadir nueva publicación
+        function addNewPost(content) {
+            const newPost = {
+                id: Date.now(), // Usamos el timestamp como ID único
+                user: currentUser,
+                content: content,
+                date: new Date().toLocaleDateString('es-ES', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                }),
+                comments: []
+            };
+            
+            posts.unshift(newPost); // Añadir al principio del array
+            renderPosts();
+        }
+        
+        // Añadir nuevo comentario
+        function addComment(postId, content) {
+            const post = posts.find(p => p.id === postId);
+            if (post) {
+                post.comments.push({
+                    user: currentUser,
+                    content: content,
+                    date: new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })
+                });
+                renderPosts();
+            }
+        }
+        
+        // Renderizar todas las publicaciones
+        function renderPosts() {
+            const container = document.getElementById('postsContainer');
+            container.innerHTML = '';
+            
+            if (posts.length === 0) {
+                container.innerHTML = '<p>No hay publicaciones aún. ¡Sé el primero en compartir!</p>';
+                return;
+            }
+            
+            posts.forEach(post => {
+                const postElement = document.createElement('article');
+                postElement.className = 'post';
+                postElement.innerHTML = `
+                    <div class="post-header">
+                        <div class="user-avatar">${post.user.charAt(0)}</div>
+                        <div class="post-info">
+                            <h3>${post.user}</h3>
+                            <small>${post.date}</small>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>${post.content}</p>
+                    </div>
+                    <div class="post-actions">
+                        <button onclick="likePost(${post.id})">
+                            <span>❤️</span> Me gusta
+                        </button>
+                        <button onclick="showCommentForm(${post.id})">
+                            <span>💬</span> Comentar
+                        </button>
+                    </div>
+                    <div class="comments" id="comments-${post.id}">
+                        ${renderComments(post.comments)}
+                    </div>
+                    <div class="comment-form" id="commentForm-${post.id}" style="display: none;">
+                        <input type="text" id="commentInput-${post.id}" placeholder="Escribe tu comentario...">
+                        <button onclick="submitComment(${post.id})">Enviar</button>
+                    </div>
+                `;
+                
+                container.appendChild(postElement);
+            });
+        }
+        
+        // Renderizar comentarios
+        function renderComments(comments) {
+            if (comments.length === 0) return '<p>No hay comentarios aún.</p>';
+            
+            return comments.map(comment => `
+                <div class="comment">
+                    <div class="comment-avatar">${comment.user.charAt(0)}</div>
+                    <div class="comment-content">
+                        <div class="comment-info">
+                            <span class="comment-author">${comment.user}</span>
+                            <small class="comment-date">${comment.date}</small>
+                        </div>
+                        <div class="comment-text">${comment.content}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        // Funciones globales para los botones
+        window.likePost = function(postId) {
+            alert(`¡Le diste me gusta a la publicación ${postId}!`);
+        };
+        
+        window.showCommentForm = function(postId) {
+            if (!currentUser) {
+                alert("Por favor, ingresa tu nombre antes de comentar");
+                return;
+            }
+            const form = document.getElementById(`commentForm-${postId}`);
+            form.style.display = form.style.display === 'none' ? 'flex' : 'none';
+        };
+        
+        window.submitComment = function(postId) {
+            const input = document.getElementById(`commentInput-${postId}`);
+            const content = input.value.trim();
+            
+            if (content) {
+                addComment(postId, content);
+                input.value = '';
+                document.getElementById(`commentForm-${postId}`).style.display = 'none';
+            }
+        };
+    </script>
+</html>
+
+    <footer>
+	Elaborado unicamente para la materia de Programación 1<br/>
+	Universidad Politécnica de San Luis Potosi<br/>
+	Por los integrantes:
+	<br/> 
+	- Pozos Vazquez Denzel Alain<br/>
+	- Reyna Beltran Isaias<br/>
+	Viajes Pikachu - San Luis Potosi
+	C. Urbano Villalón 500, La Ladrillera, 78369 San Luis Potosí, S.L.P.
+	Telefono: 800.265.0125 www.viajespikachu.com.mx
+	© Despegar.com México S.A. de C.V.. Todos los derechos reservados.
+	Se prohíbe cualquier reproducción total o parcial de este contenido sin autorización por escrito de su titular.
+	<br/>Es responsabilidad de la cadena hotelera y/o de la propiedad garantizar la exactitud de las fotografías mostradas.No nos hacemos responsables por inexactitudes en las fotografías.
+	</footer>
+
+    <script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2925358-IEXP3GYRKYUCTOT4/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
+
+</body>
+</html>
